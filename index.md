@@ -8,7 +8,7 @@ The name "Zettelkasten" means "idea box", for more information see [this informa
 
 Here is a link to the "contents page" where you can find the articles/blog posts I have written: 
 
-⭐ https://coda-coda.github.io/zettels/impulse ⭐
+⭐ [CONTENTS - START HERE](https://coda-coda.github.io/zettels/impulse) ⭐
 
 ----------
 
