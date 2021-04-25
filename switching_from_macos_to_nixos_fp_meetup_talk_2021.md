@@ -11,6 +11,6 @@ I had begun to use [Nix](nix.md) and was really impressed by it. I was also curi
 The most practical reason was that my personal MacBook had only 256GB storage and I was running short of space. The University of Waikato (for my PhD) provided me with a Dell Laptop now with 512 GB storage and they were willing to allow me to install any OS I liked 🏆.
 
 ## My experience
-I've now been using NixOS for about 4 months - and overall it's really great! There are some [annoying quirks](nixos_annoying_quirks.md) and [great advantages](nixos_advantages.md).
+I've now been using NixOS for about 4 months - and overall it's really great! There are some [annoying quirks](nixos_annoying_quirks.md) and [great advantages](nixos_advantages.md). See also my [Linux alternatives to some macOS programs](linux_alternatives_to_macos_programs.md)
 
 [Try NixOS and see for yourself](trying_nixos.md) 😃
