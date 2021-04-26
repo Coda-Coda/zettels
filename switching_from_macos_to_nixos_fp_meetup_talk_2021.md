@@ -1,4 +1,4 @@
-# Switching from macOS to NixOS
+# Switching from macOS to NixOS (Talk)
 _Presented at Functional Programming Meetup 27 April 2021_
 
 # Daniel Britten: macOS to NixOS (the "Purely Functional Linux Distribution") - My Experience
