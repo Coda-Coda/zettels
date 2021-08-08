@@ -6,7 +6,7 @@ Some key features of Nix mentioned in [this Nix guide](https://nixos.org/guides/
 - **Multiple versions**: You can have multiple versions of a package installed at the same time. This is due to path based exactly on what is being built being used for install paths (see also [this Tweag article on content/input-addressed storage](https://www.tweag.io/blog/2020-09-10-nix-cas/)).
 - **Complete dependencies**: All dependencies have to be declared which helps eliminate issues like _"It works on my system"_.
 - **Non-priveleged users can install software**: A useful side-effect of the way Nix works, not particularly useful to me personally but still.
-- **Atomic upgrades and rollbacks**: It is easy to roll-back to a previous version of software, or even of the whole system if using [NixOS](nixos.md)
+- **Atomic upgrades and rollbacks**: It is easy to roll-back to a previous version of software, or even of the whole system if using [[nixos]].
 - **Garbage collection**: `nix-collect-garbage` will delete any unused packages.
 - **Functional package language**: The language defining the packages is a functional language. Here is an example:
 ```nix
