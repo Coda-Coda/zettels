@@ -1,4 +1,5 @@
 # Linux alternatives to some macOS programs
+#nix
 
 🎁 indicates a `nixpkgs` package.
 

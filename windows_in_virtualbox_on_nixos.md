@@ -1,5 +1,4 @@
-# Setting up Windows in VirtualBox on NixOS
-
+#nix
 Assumption: You have a Windows OEM device to install NixOS on.
 Goal: Install Windows on VirtualBox using the OEM licence - on top of NixOS.
 1. BEFORE installing NixOS - Boot up into Windows and complete setup, including signing in with your Microsoft Account

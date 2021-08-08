@@ -1,5 +1,5 @@
 # Nix (the purely functional package manager)
-
+#nix
 [Nix](https://nixos.org/guides/how-nix-works.html) is a package manager available for Linux and MacOS (and apparently [it can work on Windows via WSL too](https://nathan.gs/2019/04/12/nix-on-windows/)).
 
 Some key features of Nix mentioned in [this Nix guide](https://nixos.org/guides/how-nix-works.html) are:

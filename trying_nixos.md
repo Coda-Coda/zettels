@@ -1,5 +1,5 @@
 # Trying NixOS
-
+#nix
 Obviously installing NixOS on bare metal is quite a commitment, but there are also easy ways to try it out before making that commitment.
 
 - [VirtualBox](https://nixos.org/download.html#nixos-virtualbox) - You can use [VirtualBox](https://www.virtualbox.org) on any platform to run a virtual machine with NixOS on it.
