@@ -1,0 +1,13 @@
+# For documentation and available settings, see
+# https://github.com/srid/emanote/blob/master/default/index.yaml
+
+page:
+  siteTitle: Daniel's Public Zettelkasten
+  siteName: zettels
+
+template:
+  name: /templates/layouts/book
+  theme: red
+  sidebar:
+    collapsed: false
+  urlStrategy: pretty
