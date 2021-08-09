@@ -87,20 +87,17 @@ h1, h2, h3 {
 h1, p, pre {
   margin: 0;
 }
-hr {
-  height: 0;
-  color: inherit;
-  border-top-width: 1px;
-}
-h1, hr, p {
-  margin: 0;
-}
 h1, p, h2 {
   margin: 0;
 }
 h1, h2 {
   font-size: inherit;
   font-weight: inherit;
+}
+hr {
+  height: 0;
+  color: inherit;
+  border-top-width: 1px;
 }
 h1, p, hr, h2 {
   margin: 0;
