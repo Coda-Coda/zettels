@@ -13,7 +13,7 @@ At the recommendation of a friend, I intend to look into:
 ```{=html}
 <iframe width="560" height="315" src="https://www.youtube.com/embed/HUqkVXRFpE8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ```
- - Decolonising methodologies, e.g.
+ - [[decolonising_methodologies]], e.g.
 ```{=html}
 <iframe width="560" height="315" src="https://www.youtube.com/embed/YSX_4FnqXwQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ```
