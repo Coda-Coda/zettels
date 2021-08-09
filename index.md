@@ -1,3 +1,7 @@
+---
+tags:
+  - (Main)
+---
 # Welcome
 
 Welcome to my (Daniel Britten's) public Zettelkasten. This is kind of like a blog 🙂
@@ -6,7 +10,9 @@ The name "Zettelkasten" means "idea box", for more information see [this informa
 
 ----------
 
-← Have a look at the content on the left
+## Start here
+
+[Browse the content by tag 🏷️](-/tags) or [view all files 🗄️](-/all).
 
 ----------
 

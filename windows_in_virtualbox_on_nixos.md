@@ -1,3 +1,7 @@
+---
+tags:
+  - (Tech)/(Going Deeper)
+---
 # Windows in VirtualBox on NixOS
 #nix
 Assumption: You have a Windows OEM device to install NixOS on.

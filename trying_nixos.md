@@ -1,3 +1,7 @@
+---
+tags:
+  - (Tech)/(Going Deeper)
+---
 # Trying NixOS
 #nix
 Obviously installing NixOS on bare metal is quite a commitment, but there are also easy ways to try it out before making that commitment.

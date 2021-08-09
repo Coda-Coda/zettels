@@ -1,3 +1,7 @@
+---
+tags:
+  - (Tech)/(Going Deeper)
+---
 # NixOS
 #nix
 [NixOS](https://nixos.org/), the "Purely Functional Linux Distribution" is an opinionated Linux distribution. It is based around the [[nix|Nix package manager]] with similar advantages to using Nix, but applied to the whole system configuration rather than just installed packages.

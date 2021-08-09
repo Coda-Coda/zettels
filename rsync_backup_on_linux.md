@@ -1,3 +1,7 @@
+---
+tags:
+  - (Tech)/(Going Deeper)
+---
 # rsync backup on linux
 
 ## Example Backup script using rsync - similar result to Time Machine Backups

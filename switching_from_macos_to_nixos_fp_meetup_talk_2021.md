@@ -1,3 +1,7 @@
+---
+tags:
+  - (Tech)
+---
 # Switching from macOS to NixOS (Talk)
 #nix
 

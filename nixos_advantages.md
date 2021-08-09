@@ -1,3 +1,7 @@
+---
+tags:
+  - (Tech)/(Going Deeper)
+---
 # Advantages of NixOS
 
 - **Atomic upgrades and rollbacks for the whole system**: This results in an overall really stable system when updating becuase any changes that cause issues can be easily rolled back.

@@ -6,8 +6,6 @@ page:
   siteName: zettels
 
 template:
-  name: /templates/layouts/book
+  name: /templates/layouts/note
   theme: blue
-  sidebar:
-    collapsed: false
   urlStrategy: pretty

@@ -1,9 +1,6 @@
 # For documentation and available settings, see
 # https://github.com/srid/emanote/blob/master/default/index.yaml
 
+# YAML: (Politics)
 template:
-  name: /templates/layouts/book
-  theme: blue
-  sidebar:
-    collapsed: true
-  urlStrategy: pretty
+  theme: red

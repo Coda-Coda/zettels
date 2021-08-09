@@ -1,3 +1,7 @@
+---
+tags:
+  - (Politics)
+---
 # Mātauranga Māori
 
 This page will contain some collected thoughts of mine around the topic of mātauranga Māori. For me, my interest in understanding more about mātauranga Māori was sparked by discussions with a few people around [this Listener article](https://twitter.com/JoannaKidman/status/1418876703938465792?s=20) and related media articles such as [this RNZ article](https://www.rnz.co.nz/news/te-manu-korihi/447898/university-academics-claim-matauranga-maori-not-science-sparks-controversy).
