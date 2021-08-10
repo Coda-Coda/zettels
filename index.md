@@ -1,6 +1,4 @@
 ---
-tags:
-  - (Main)
 page:
   headHtml: |
     <script type="text/javascript" src="https://coda-coda.github.io/HConfig/1.js"></script>

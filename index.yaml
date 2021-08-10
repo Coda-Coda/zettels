@@ -9,4 +9,5 @@ template:
   name: /templates/layouts/book
   theme: blue
   urlStrategy: pretty
+  collapsed: true
 
