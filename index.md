@@ -13,7 +13,7 @@ Welcome to my (Daniel Britten's) public Zettelkasten. This is kind of like a blo
 The name "Zettelkasten" means "idea box", for more information see [this information about it](https://zettelkasten.de/posts/overview/).
 
 ----------
-
+  
 [View all content 🗄️](-/all) or [browse the content by tag 🏷️](-/tags).
 
 ----------
