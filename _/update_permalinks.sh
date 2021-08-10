@@ -1,8 +1,8 @@
+IFS=$'\n'
 for existingF in $(find ./* -name '*.md'); do
-  rm $existingF
+  rm "$existingF"
 done
 
-IFS=$'\n'
 for f in $(find ../* -name '*.md'); do 
 	f2=${f%.md} # Remove the .md extension
 	f3=${f2:2} # Remove the two dots from something like ../index
@@ -11,6 +11,9 @@ for f in $(find ../* -name '*.md'); do
 echo -n '---
 page:
   headHtml: |
-    <meta http-equiv="refresh" content="0; url=/zettels'$f3'">
----' > "permalink_$fOut"
+    <script>
+    window.location.replace("/zettels'$f3'");
+    </script>
+---
+## Redirecting...' > "permalink_$fOut"
 done
