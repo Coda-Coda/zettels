@@ -9,6 +9,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - name: Update permalinks
+        run: |
+          pushd ./_permalink
+          ./update_permalinks.sh
+          popd
       - name: Build emanote site 🔧
         run: |
           mkdir -p output.docker 
