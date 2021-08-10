@@ -14,9 +14,7 @@ The name "Zettelkasten" means "idea box", for more information see [this informa
 
 ----------
 
-## Start here
-
-[Browse the content by tag 🏷️](-/tags) or [view all files 🗄️](-/all).
+[View all content 🗄️](-/all) or [browse the content by tag 🏷️](-/tags).
 
 ----------
 
