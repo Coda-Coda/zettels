@@ -1,6 +1,7 @@
 ---
 tags:
   - Starred/Formal Methods and Blockchain
+  - Starred/Tech
 ---
 # Formal verification and the top 10 crypto-tokens
 
