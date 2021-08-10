@@ -1,7 +1,0 @@
-# For documentation and available settings, see
-# https://github.com/srid/emanote/blob/master/default/index.yaml
-
-# YAML: (Politics)/(Going Deeper)
-template:
-  theme: red
-  collapsed: true
