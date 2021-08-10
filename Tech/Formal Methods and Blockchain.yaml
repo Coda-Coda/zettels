@@ -4,4 +4,4 @@
 template:
   theme: blue
   sidebar:
-    collapsed: false
+    collapsed: true
