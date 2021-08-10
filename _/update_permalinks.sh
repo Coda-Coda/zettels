@@ -11,6 +11,6 @@ for f in $(find ../* -name '*.md'); do
 echo -n '---
 page:
   headHtml: |
-    <meta http-equiv="refresh" content="0; url='$f3'">
+    <meta http-equiv="refresh" content="0; url='zettels/$f3'">
 ---' > "permalink_$fOut"
 done
