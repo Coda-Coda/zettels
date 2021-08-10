@@ -4,13 +4,6 @@
 page:
   siteTitle: Daniel's Public Zettelkasten
   siteName: zettels
-  headHtml: |
-    <script type="application/json" class="js-hypothesis-config">
-    {
-    "showHighlights": true
-    }
-    </script>
-    <script async src="https://hypothes.is/embed.js"></script>
 
 template:
   name: /templates/layouts/book
