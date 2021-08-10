@@ -12,5 +12,5 @@ echo -n '---
 page:
   headHtml: |
     <meta http-equiv="refresh" content="0; url='$f3'">
----' > "$fOut"
+---' > "permalink_$fOut"
 done
