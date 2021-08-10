@@ -1,4 +1,10 @@
 ---
+page:
+  headHtml: |
+    <script type="text/javascript" src="https://coda-coda.github.io/HConfig/1.js"></script>
+    <meta name="dc.relation.ispartof" content="Public-Zettelkasten-Daniel-Britten-(ORCID-0000-0002-7860-3595)">
+    <meta name="dc.identifier" content="formal_verification_and_the_top_100_cryptocurrencies_at_feb_2021">
+    <script async src="https://hypothes.is/embed.js"></script>
 tags:
   - Starred/Formal Methods and Blockchain
   - Starred/Tech

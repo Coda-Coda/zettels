@@ -1,3 +1,11 @@
+---
+page:
+  headHtml: |
+    <script type="text/javascript" src="https://coda-coda.github.io/HConfig/1.js"></script>
+    <meta name="dc.relation.ispartof" content="Public-Zettelkasten-Daniel-Britten-(ORCID-0000-0002-7860-3595)">
+    <meta name="dc.identifier" content="erc20_tokens">
+    <script async src="https://hypothes.is/embed.js"></script>
+---
 # ERC-20 tokens
 
 ERC-20 stands for Ethereum Requests for Comments 20. It was introduced in EIP-20 which stands for Ethereum Improvement Proposal 20. Fabian Vogelsteller and Vitalik Buterin were the authors. You can read the details here: https://eips.ethereum.org/EIPS/eip-20
