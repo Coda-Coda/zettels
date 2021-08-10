@@ -3,5 +3,3 @@
 
 template:
   theme: blue
-  sidebar:
-    collapsed: true

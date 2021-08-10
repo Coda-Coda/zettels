@@ -1,8 +1,0 @@
-# For documentation and available settings, see
-# https://github.com/srid/emanote/blob/master/default/index.yaml
-
-template:
-  sidebar:
-    # Whether this node in the sidebar tree should remain collapsed by default
-    # (unless a route in it is active)
-    collapsed: true
