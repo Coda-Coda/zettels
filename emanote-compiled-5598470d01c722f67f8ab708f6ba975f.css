@@ -111,7 +111,7 @@ h1, p, h2 {
 h1, h2, pre, p {
   margin: 0;
 }
-h1, p, hr, h2 {
+h1, p, hr {
   margin: 0;
 }
 img {
