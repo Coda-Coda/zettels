@@ -56,11 +56,11 @@ body {
   font-family: inherit;
   line-height: inherit;
 }
-code {
+code, pre {
   font-size: 1em;
   font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
 }
-code, pre {
+code {
   font-size: 1em;
   font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
 }
@@ -95,9 +95,6 @@ h1, h2, p {
 h1, hr, h2 {
   margin: 0;
 }
-h1, h2, pre, p {
-  margin: 0;
-}
 h1, p, h2, h3 {
   margin: 0;
 }
@@ -109,6 +106,9 @@ h1, p, pre {
   margin: 0;
 }
 h1, p, h2 {
+  margin: 0;
+}
+h1, h2, pre, p {
   margin: 0;
 }
 h1, p, hr, h2 {
@@ -232,13 +232,13 @@ ul {
   --tw-bg-opacity: 1;
   background-color: rgba(219, 234, 254, var(--tw-bg-opacity));
 }
-.bg-gray-700 {
-  --tw-bg-opacity: 1;
-  background-color: rgba(55, 65, 81, var(--tw-bg-opacity));
-}
 .hover\:bg-blue-50:hover {
   --tw-bg-opacity: 1;
   background-color: rgba(239, 246, 255, var(--tw-bg-opacity));
+}
+.bg-gray-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(55, 65, 81, var(--tw-bg-opacity));
 }
 .border-gray-400 {
   --tw-border-opacity: 1;
@@ -573,13 +573,13 @@ ul {
   --tw-text-opacity: 1;
   color: rgba(37, 99, 235, var(--tw-text-opacity));
 }
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
-}
 .hover\:text-blue-500:hover {
   --tw-text-opacity: 1;
   color: rgba(59, 130, 246, var(--tw-text-opacity));
+}
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
 .truncate {
   overflow: hidden;
