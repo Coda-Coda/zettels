@@ -4,4 +4,4 @@
 template:
   theme: red
   sidebar:
-    collapsed: false
+    collapsed: true
