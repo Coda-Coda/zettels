@@ -10,7 +10,6 @@ page:
 
 See [input-output-hk/plutus-pioneer-program on GitHub](https://github.com/input-output-hk/plutus-pioneer-program) and [Cardano.org's information about the program](https://testnets.cardano.org/en/plutus-pioneer-program/).
 
-## All
 ```query
 path:./**
 ```

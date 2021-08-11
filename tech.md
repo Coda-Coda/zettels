@@ -12,6 +12,11 @@ page:
 tag:#Starred/Tech
 ```
 
+## In this directory
+```query
+path:./*
+```
+
 ## All
 ```query
 path:./**

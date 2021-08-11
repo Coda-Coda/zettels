@@ -12,6 +12,11 @@ page:
 tag:#Starred/Politics
 ```
 
+## In this directory
+```query
+path:./*
+```
+
 ## All
 ```query
 path:./**

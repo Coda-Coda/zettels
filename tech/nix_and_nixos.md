@@ -9,7 +9,12 @@ page:
 # Nix and NixOS
 ## Starred ⭐
 ```query
-tag:#Starred/Tech
+tag:#Starred/Nix and NixOS
+```
+
+## In this directory
+```query
+path:./*
 ```
 
 ## All

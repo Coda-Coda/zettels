@@ -7,6 +7,18 @@ page:
     <script async src="https://hypothes.is/embed.js"></script>
 ---
 # Linux (General)
+
+
+## Starred ⭐
+```query
+tag:#Starred/Linux (General)
+```
+
+## In this directory
+```query
+path:./*
+```
+
 ## All
 ```query
 path:./**

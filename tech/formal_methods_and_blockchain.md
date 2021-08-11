@@ -15,6 +15,11 @@ Formal methods applied to the blockchain involves, for example, the use of compu
 tag:#Starred/Formal Methods and Blockchain
 ```
 
+## In this directory
+```query
+path:./*
+```
+
 ## All
 ```query
 path:./**
