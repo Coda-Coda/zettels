@@ -6,6 +6,7 @@ page:
     <meta name="dc.identifier" content="Linux (General)">
     <script async src="https://hypothes.is/embed.js"></script>
 ---
+# Linux (General)
 ## All
 ```query
 path:./*

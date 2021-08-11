@@ -6,6 +6,7 @@ page:
     <meta name="dc.identifier" content="Nix and NixOS">
     <script async src="https://hypothes.is/embed.js"></script>
 ---
+# Nix and NixOS
 ## Starred ⭐
 ```query
 tag:#Starred/Tech

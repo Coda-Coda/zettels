@@ -6,6 +6,7 @@ page:
     <meta name="dc.identifier" content="Politics">
     <script async src="https://hypothes.is/embed.js"></script>
 ---
+# Politics
 ## Starred ⭐
 ```query
 tag:#Starred/Politics

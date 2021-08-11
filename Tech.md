@@ -6,6 +6,7 @@ page:
     <meta name="dc.identifier" content="Tech">
     <script async src="https://hypothes.is/embed.js"></script>
 ---
+# Tech
 ## Starred ⭐
 ```query
 tag:#Starred/Tech

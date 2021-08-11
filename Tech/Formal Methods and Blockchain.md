@@ -6,6 +6,7 @@ page:
     <meta name="dc.identifier" content="Formal Methods and Blockchain">
     <script async src="https://hypothes.is/embed.js"></script>
 ---
+# Formal Methods and Blockchain
 ## Starred
 ```query
 tag:#Starred/Formal Methods and Blockchain
