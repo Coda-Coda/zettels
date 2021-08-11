@@ -8,7 +8,7 @@ page:
 ---
 # Formal Methods and Blockchain
 
-Formal methods applied to the blockchain involves, for example, the use of computer-assisted proofs the verify properties about [[smart_contracts]] 
+Formal methods applied to the blockchain involves, for example, the use of computer-assisted proofs the verify properties about [[smart_contracts]].
 
 ## Starred
 ```query
