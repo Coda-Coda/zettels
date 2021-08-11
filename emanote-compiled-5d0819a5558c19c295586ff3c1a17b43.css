@@ -82,6 +82,9 @@ h1, h2 {
   font-weight: inherit;
   margin: 0;
 }
+h1, p, blockquote {
+  margin: 0;
+}
 h1, p {
   margin: 0;
 }
@@ -225,13 +228,13 @@ ul {
   --tw-bg-opacity: 1;
   background-color: rgba(243, 244, 246, var(--tw-bg-opacity));
 }
-.hover\:bg-gray-50:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgba(249, 250, 251, var(--tw-bg-opacity));
-}
 .hover\:bg-red-50:hover {
   --tw-bg-opacity: 1;
   background-color: rgba(254, 242, 242, var(--tw-bg-opacity));
+}
+.hover\:bg-gray-50:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgba(249, 250, 251, var(--tw-bg-opacity));
 }
 .bg-gray-700 {
   --tw-bg-opacity: 1;
