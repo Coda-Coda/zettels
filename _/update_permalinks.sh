@@ -11,6 +11,8 @@ for f in $(find ../* -name '*.md'); do
 cp $f "permalink_$fOut"
 
 sed -i 's/\[\[\([[:alnum:]_-][[:alnum:] _-]*\)\]\]/\[\[permalink_\1\]\]/g' "permalink_$fOut"
+sed -i 's/^tags:$/tags-in-original:/g' "permalink_$fOut"
+sed -i 's/^tags: $/tags-in-original:/g' "permalink_$fOut"
 
 echo '
 
