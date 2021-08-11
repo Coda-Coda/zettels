@@ -14,5 +14,5 @@ tag:#Starred/Tech
 
 ## All
 ```query
-path:./*
+path:./**
 ```

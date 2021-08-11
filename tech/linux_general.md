@@ -9,5 +9,5 @@ page:
 # Linux (General)
 ## All
 ```query
-path:./*
+path:./**
 ```

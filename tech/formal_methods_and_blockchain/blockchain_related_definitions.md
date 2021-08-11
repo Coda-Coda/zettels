@@ -11,5 +11,5 @@ page:
 Here are some links to various blockchain-related definitions:
 
 ```query
-path:./*
+path:./**
 ```

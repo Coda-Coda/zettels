@@ -14,5 +14,5 @@ tag:#Starred/Politics
 
 ## All
 ```query
-path:./*
+path:./**
 ```
