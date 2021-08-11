@@ -5,6 +5,7 @@ page:
     <meta name="dc.relation.ispartof" content="Public-Zettelkasten-Daniel-Britten-(ORCID-0000-0002-7860-3595)">
     <meta name="dc.identifier" content="decolonisation_in_aotearoa_book">
     <script async src="https://hypothes.is/embed.js"></script>
+    <meta property="og:image" content="https://www.nzcer.org.nz/system/files/styles/full_node_image/private/Decolonising_frontCover%20small.jpg" />
 ---
 # Decolonisation in Aotearoa: Education, research and practice (book)
 
