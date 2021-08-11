@@ -93,15 +93,15 @@ h1, h2 {
 h1, h2, p {
   margin: 0;
 }
+h1, p, h2 {
+  margin: 0;
+}
 h1, p, h2, h3 {
   margin: 0;
 }
 h1, h2, h3 {
   font-size: inherit;
   font-weight: inherit;
-}
-h1, p, h2 {
-  margin: 0;
 }
 h1, p, hr {
   margin: 0;
@@ -516,9 +516,6 @@ ul {
 }
 .pl-4 {
   padding-left: 1rem;
-}
-.pt-0\.5 {
-  padding-top: 0.125rem;
 }
 .text-center {
   text-align: center;
