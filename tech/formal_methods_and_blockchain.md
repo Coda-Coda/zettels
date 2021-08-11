@@ -7,6 +7,9 @@ page:
     <script async src="https://hypothes.is/embed.js"></script>
 ---
 # Formal Methods and Blockchain
+
+Formal methods applied to the blockchain involves, for example, the use of computer-assisted proofs the verify properties about [[smart_contracts]] 
+
 ## Starred
 ```query
 tag:#Starred/Formal Methods and Blockchain
