@@ -10,6 +10,8 @@ for f in $(find ../* -name '*.md'); do
 	fOut=`basename $f` # Gets the basename, for outputting in the _permalink directory.
 cp $f "permalink_$fOut"
 
+sed -i 's/\[\[/\[\[permalink_/g' "permalink_$fOut"
+
 echo '
 
 ```{=html}
