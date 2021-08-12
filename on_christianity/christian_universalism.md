@@ -12,5 +12,5 @@ I will add to this in time, for now please refer to what I wrote in [[on_christi
 
 ## Universalism Against the World Podcast
 ```{=html}
-<iframe src="https://open.spotify.com/embed/album/1DFixLWuPkv3KT3TnV35m3" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+<iframe src="https://open.spotify.com/embed-podcast/episode/3cRBWStxtNQmIbSTuJ0nIx" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 ```
