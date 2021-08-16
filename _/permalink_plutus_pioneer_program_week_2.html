@@ -21,7 +21,7 @@
 <script async src='https://hypothes.is/embed.js'></script>
   
   <!-- CSSSTART -->
-	<link rel="stylesheet" href="emanote-compiled-d0ff3f9b35580f2f0af7f23301974663.css" />
+	<link rel="stylesheet" href="emanote-compiled-6ea9b368c2f979e10e27911a0d179924.css" />
   <!-- CSSEND -->
 
   <!-- Heist error element -->
@@ -1391,6 +1391,43 @@
       </svg>
     
   
+    <a class='hover:underline truncate' title='Week 3 - Plutus Pioneer Program' href='_/permalink_plutus_pioneer_program_week_3'>
+      Week 3 - Plutus Pioneer Program
+    </a>
+    
+      
+        
+    
+  </div>
+
+  <!-- Node's children forest, displayed only on active trees
+    TODO: Use <details> to toggle visibility?
+  -->
+  
+</div>
+    
+      <!-- Variable bindings for this tree-->
+  
+    
+  
+
+
+
+  
+
+
+<!-- Rendering of this tree -->
+<div class='pl-2'>
+  <!-- Node's rootLabel-->
+  <div class='flex items-center my-2 space-x-2 justify-left'>
+    
+    
+      <svg class='w-4 h-4 flex-shrink-0 inline' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z'>
+        </path>
+      </svg>
+    
+  
     <a class='hover:underline truncate' title='Welcome' href='_/permalink_index'>
       Welcome
     </a>
@@ -1498,8 +1535,7 @@
             <article class='overflow-auto'>
   <!-- What goes in this file will appear on top of note body-->
   <div xmlhtmlRaw><iframe width="560" height="315" src="https://www.youtube.com/embed/sN3BIa3GAOc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div><h2 id='notes' class='inline-block mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>Notes</h2><div xmlhtmlRaw><!-- Up to 11:47 https://youtu.be/sN3BIa3GAOc?t=865 -->
-</div>
+</div><h2 id='notes' class='inline-block mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>Notes</h2>
     <p class='mb-3'>
       Contracts on-chain never execute automatically, they always require an external agent to trigger their execution (and they typically/always? pay the associated gas cost). This is why we needed a to explicitly close the auction in the <a href='tech/formal_methods_and_blockchain/plutus_pioneer_program/plutus_pioneer_program_week_1' class='text-blue-600 font-bold hover:underline' data-wikilink-type='WikiLinkNormal'>previous week's</a> example.
     </p>
@@ -1531,6 +1567,38 @@
     <p class='mb-3'>
       All three of the same type <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>Data</code> at this level (low-level).
     </p>
+  
+    <p class='mb-3'>
+      <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>mkValidator</code> has a return type of unit. But it can return an error. So at this level if it throws no error then it passes validation. A script address is more or less the hash of a validator. This script is like the opposite of a burn address, anyone can use the funds at this address.
+    </p>
+  
+    <p class='mb-3'>
+      <span class='bg-yellow-200 px-2 py-0.5 rounded-xl'>Tip</span>: Make it a habit to frequently save work and check if it still compiles. Ending up with a long list of errors is not ideal.
+    </p>
+  
+    <p class='mb-3'>
+      <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>[||...||]</code> takes a Haskell function and returns a syntax tree. <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>$$</code> splices the syntax in at the current point. <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>PlutusTx.compile</code> takes syntax tree and turns it into a Plutus Core function.
+    </p>
+  
+    <p class='mb-3'>
+      Remember <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>{-# INLINABLE ... #-}</code> pragma when using helper functions referenced by a validator function including the validator itself. Everything that’s used in on-chain code needs the INLINABLE pragma.
+    </p>
+  
+    <p class='mb-3'>
+      <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>unScript $ getValidator validator</code> to get actual Plutus Core code.
+    </p>
+  
+    <p class='mb-3'>
+      Script Addresses seem to be static, given by the hash of the validator.
+    </p>
+  
+    <p class='mb-3'>
+      Can use <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>traceError "ErrorMessage"</code> so that errors can be seen in the playground. Needs overloaded strings.
+    </p>
+  
+    <p class='mb-3'>
+      <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>PlutusTx.unstableMakeIsData</code> does not give guarantees about which constructors match which numbers (e.g. <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>Constr 0</code>) <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>stableMakeIsData</code> allows you to specify the numbering so that it stays consistent and wouldn’t break when working with a deployed contract.
+    </p>
   <div xmlhtmlRaw><script>
     window.location.replace("/zettels/tech/formal_methods_and_blockchain/plutus_pioneer_program/plutus_pioneer_program_week_2");
 </script>
@@ -1558,7 +1626,7 @@
     
       
         <span class='font-mono text-sm tracking-tighter' title='And rendered with /templates/layouts/book'>
-          0.1.45.1
+          0.1.47.0
         </span>
       
     

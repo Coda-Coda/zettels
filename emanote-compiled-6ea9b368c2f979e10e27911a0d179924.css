@@ -244,6 +244,10 @@ ul {
   --tw-bg-opacity: 1;
   background-color: rgba(55, 65, 81, var(--tw-bg-opacity));
 }
+.bg-yellow-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(253, 230, 138, var(--tw-bg-opacity));
+}
 .border-gray-400 {
   --tw-border-opacity: 1;
   border-color: rgba(156, 163, 175, var(--tw-border-opacity));
@@ -257,6 +261,9 @@ ul {
 }
 .rounded-lg {
   border-radius: 0.5rem;
+}
+.rounded-xl {
+  border-radius: 0.75rem;
 }
 .border-b-2 {
   border-bottom-width: 2px;
