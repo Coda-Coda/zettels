@@ -106,6 +106,9 @@ h1, h2, p, hr, blockquote {
 h1, p, h2 {
   margin: 0;
 }
+h1, h2, p, h3 {
+  margin: 0;
+}
 h1, p, hr {
   margin: 0;
 }

@@ -21,7 +21,7 @@
 <script async src='https://hypothes.is/embed.js'></script>
   
   <!-- CSSSTART -->
-	<link rel="stylesheet" href="emanote-compiled-6ea9b368c2f979e10e27911a0d179924.css" />
+	<link rel="stylesheet" href="emanote-compiled-295edf9c6d929cad603cfda3dc2c4c57.css" />
   <!-- CSSEND -->
 
   <!-- Heist error element -->
@@ -751,9 +751,17 @@
   <div xmlhtmlRaw><iframe width="560" height="315" src="https://www.youtube.com/embed/6_rfCCY9_gY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div><h2 id='notes' class='inline-block mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>Notes</h2>
     <p class='mb-3'>
-      <span class='bg-yellow-200 px-2 py-0.5 rounded-xl'>TODO</span>
+      <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>plutus-playground-server -i 120s</code> to set timeout of playground if needed.
+    </p>
+  <h3 id='scriptcontext' class='mt-6 mb-2 text-3xl font-bold text-gray-700'>ScriptContext</h3>
+    <p class='mb-3'>
+      <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>txInfoValidRange</code> - If the current time does not fall into this time-frame, then validation fails immediately. So all scripts run locally that succeed will also succeed on a node if all the pre-validation checks pass (including the time-range check and that all UTXOs it uses are still unspent).
     </p>
   
+    <p class='mb-3'>
+      Slot number to time is <em>currently</em> 1s. But this could change with a hard-fork, potentially. We know that the slot length won’t change within the next 36 hours, due to the way that a hard-fork won’t take effect. Overall, for <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>txInfoValidRange</code> we have to not put values further then 36 hours into the future in, except for ∞ in the future. <strong>Note</strong> that you can still have contracts that deal with time far in the future, this limitation is just about generating transactions that redeem these contracts with time-locks potentially many years in the future.
+    </p>
+  <div xmlhtmlRaw><!-- Up to 39:50m https://youtu.be/6_rfCCY9_gY?t=2369 ---></div>
 </article>
             
             
