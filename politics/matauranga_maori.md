@@ -19,9 +19,11 @@ At the recommendation of a friend, I intend to look into:
 ```{=html}
 <iframe width="560" height="315" src="https://www.youtube.com/embed/HUqkVXRFpE8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ```
- - [[decolonising_methodologies]], e.g.
+ - [[decolonising_methodologies]]#, e.g.
 ```{=html}
 <iframe width="560" height="315" src="https://www.youtube.com/embed/YSX_4FnqXwQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ```
+ - I also may at some point read: [[decolonisation_in_aotearoa_book]]#.
+
 
 I'll add to this page in time. To be clear though, I'm not going to be anywhere close to an expert and please don't take that I am putting my summaries and thoughts up here to mean anything other than: I'm on a journey and am interested in learning, improving my understandings and how I may act going forward. To engage with me, I'm experimenting with [Hypothes.is](https://hypothes.is), please see [[reader_interaction]].
