@@ -100,7 +100,7 @@ hr {
   color: inherit;
   border-top-width: 1px;
 }
-h1, h2, p, hr, blockquote {
+h1, h2, p, hr, blockquote, h3 {
   margin: 0;
 }
 h1, p, h2 {
