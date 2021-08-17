@@ -15,7 +15,7 @@ This page will contain some collected thoughts of mine around the topic of māta
 I intend to spend some time understanding this all better in the hope of learning more about mātauranga Māori at the very least, and hopefully also understanding more about the racial tensions related to this and ways in which I can play the role I have in all this in a way which aligns with my values.
 
 At the recommendation of a friend, I intend to look into:
- - Wai 262, e.g.
+ - [[wai_262]], e.g.
 ```{=html}
 <iframe width="560" height="315" src="https://www.youtube.com/embed/HUqkVXRFpE8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ```
