@@ -4,7 +4,7 @@
   <meta charset='UTF-8' />
   <meta name='viewport' content='width=device-width, initial-scale=1' />
   <title>
-    Plutus Pioneer Program – Daniel's Public Zettelkasten
+    Week 4 - Plutus Pioneer Program – Daniel's Public Zettelkasten
   </title>
   
     
@@ -17,7 +17,7 @@
     
     <script type='text/javascript' src='https://coda-coda.github.io/HConfig/1.js'></script>
 <meta name='dc.relation.ispartof' content='Public-Zettelkasten-Daniel-Britten-(ORCID-0000-0002-7860-3595)' />
-<meta name='dc.identifier' content='plutus_pioneer_program' />
+<meta name='dc.identifier' content='plutus_pioneer_program_week_4' />
 <script async src='https://hypothes.is/embed.js'></script>
   
   <!-- CSSSTART -->
@@ -102,6 +102,15 @@
             <li class='inline-flex items-center'>
               <a class='px-1 font-bold' href='tech/formal_methods_and_blockchain'>
                 Formal Methods and Blockchain
+              </a>
+              <svg fill='currentColor' viewBox='0 0 20 20' class='w-auto h-5 text-gray-400'>
+                <path fill-rule='evenodd' d='M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z' clip-rule='evenodd'></path>
+              </svg>
+            </li>
+          
+            <li class='inline-flex items-center'>
+              <a class='px-1 font-bold' href='tech/formal_methods_and_blockchain/plutus_pioneer_program'>
+                Plutus Pioneer Program
               </a>
               <svg fill='currentColor' viewBox='0 0 20 20' class='w-auto h-5 text-gray-400'>
                 <path fill-rule='evenodd' d='M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z' clip-rule='evenodd'></path>
@@ -456,7 +465,11 @@
     
       <!-- Variable bindings for this tree-->
   
-  
+    
+      
+      
+    
+
 
 
   
@@ -474,7 +487,7 @@
       </svg>
       
   
-    <a class='font-bold text-blue-600 hover:underline truncate' title='Plutus Pioneer Program' href='tech/formal_methods_and_blockchain/plutus_pioneer_program'>
+    <a class='font-bold hover:underline truncate' title='Plutus Pioneer Program' href='tech/formal_methods_and_blockchain/plutus_pioneer_program'>
       Plutus Pioneer Program
     </a>
     
@@ -599,9 +612,7 @@
     
       <!-- Variable bindings for this tree-->
   
-    
   
-
 
 
   
@@ -614,23 +625,23 @@
     
     
       <svg class='w-4 h-4 flex-shrink-0 inline' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
-        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z'>
         </path>
       </svg>
-    
+      
   
-    <a class='hover:underline truncate' title='Week 4 - Plutus Pioneer Program' href='tech/formal_methods_and_blockchain/plutus_pioneer_program/plutus_pioneer_program_week_4'>
+    <a class='font-bold text-blue-600 hover:underline truncate' title='Week 4 - Plutus Pioneer Program' href='tech/formal_methods_and_blockchain/plutus_pioneer_program/plutus_pioneer_program_week_4'>
       Week 4 - Plutus Pioneer Program
     </a>
     
       
-        
-    
   </div>
 
   <!-- Node's children forest, displayed only on active trees
     TODO: Use <details> to toggle visibility?
   -->
+  
+    
   
 </div>
     
@@ -808,65 +819,31 @@
           <main class='px-4 py-4'>
             <h1 class='flex items-end justify-center mb-4 p-3 bg-blue-100 text-5xl font-extrabold text-black rounded'>
   <a class='z-40 tracking-tighter '>
-    Plutus Pioneer Program
+    Week 4 - Plutus Pioneer Program
   </a>
 </h1>
             <article class='overflow-auto'>
   <!-- What goes in this file will appear on top of note body-->
+  <div xmlhtmlRaw><iframe width="560" height="315" src="https://www.youtube.com/embed/g4lvA14I-Jg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div><h2 id='notes' class='inline-block mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>Notes</h2><h3 id='off-chain-part' class='mt-6 mb-2 text-3xl font-bold text-gray-700'>Off-chain part</h3>
+    <p class='mb-3'>
+      How to write off-chain Plutus code.
+    </p>
   
     <p class='mb-3'>
-      See <a href='https://github.com/input-output-hk/plutus-pioneer-program' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>input-output-hk/plutus-pioneer-program on GitHub</a> and <a href='https://testnets.cardano.org/en/plutus-pioneer-program/' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>Cardano.org’s information about the program</a>.
+      Validation functions tend to be fairly simple (relatively) Haskell functions (esp. from needing <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>INLINABLE</code>). Off-chain code though, uses a lot of more advanced Haskell features.
     </p>
-  <nav>
-  <div class='mb-8'>
-    <header class='pb-2 mb-2 font-semibold text-gray-600'>
-      Pages matching path './**'
-    </header>
-    
-      <div class='flex flex-wrap my-2'>
-        
-          <span class='mr-2 text-right text-gray-600'>
-          </span>
-        
-        <a class='flex-1 text-blue-600 font-bold border-l-2 pl-2 hover:underline' href='tech/formal_methods_and_blockchain/plutus_pioneer_program/plutus_pioneer_program_week_4'>
-          Week 4 - Plutus Pioneer Program
-        </a>
-      </div>
-    
-      <div class='flex flex-wrap my-2'>
-        
-          <span class='mr-2 text-right text-gray-600'>
-          </span>
-        
-        <a class='flex-1 text-blue-600 font-bold border-l-2 pl-2 hover:underline' href='tech/formal_methods_and_blockchain/plutus_pioneer_program/plutus_pioneer_program_week_3'>
-          Week 3 - Plutus Pioneer Program
-        </a>
-      </div>
-    
-      <div class='flex flex-wrap my-2'>
-        
-          <span class='mr-2 text-right text-gray-600'>
-          </span>
-        
-        <a class='flex-1 text-blue-600 font-bold border-l-2 pl-2 hover:underline' href='tech/formal_methods_and_blockchain/plutus_pioneer_program/plutus_pioneer_program_week_2'>
-          Week 2 - Plutus Pioneer Program
-        </a>
-      </div>
-    
-      <div class='flex flex-wrap my-2'>
-        
-          <span class='mr-2 text-right text-gray-600'>
-          </span>
-        
-        <a class='flex-1 text-blue-600 font-bold border-l-2 pl-2 hover:underline' href='tech/formal_methods_and_blockchain/plutus_pioneer_program/plutus_pioneer_program_week_1'>
-          Week 1 - Plutus Pioneer Program
-        </a>
-      </div>
-    
-  </div>
-</nav>
+  <h3 id='monads' class='mt-6 mb-2 text-3xl font-bold text-gray-700'>Monads</h3>
     <p class='mb-3'>
-      
+      <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>main</code> gets executed by Haskell, evaluating the ‘recipe’ given by an <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>IO</code>. <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>main</code> should have the type <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>IO ()</code> (it seems…).
+    </p>
+  
+    <p class='mb-3'>
+      You can also execute IO in the <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>repl</code>. Putting an <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>IO ()</code> directly in the repl will cause it to be executed. E.g. <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>&gt; putStrLn "Hello World"</code>.
+    </p>
+  
+    <p class='mb-3'>
+      Bind: <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>(&gt;&gt;=) :: Monad m =&gt; m a -&gt; (a -&gt; m b) -&gt; m b)</code>
     </p>
   
 </article>
