@@ -23,3 +23,5 @@ Validation functions tend to be fairly simple (relatively) Haskell functions (es
 You can also execute IO in the `repl`. Putting an `IO ()` directly in the repl will cause it to be executed. E.g. `> putStrLn "Hello World"`.
 
 Bind: `(>>=) :: Monad m => m a -> (a -> m b) -> m b)`
+
+<!-- Up to here: https://youtu.be/g4lvA14I-Jg?t=1513 -->
