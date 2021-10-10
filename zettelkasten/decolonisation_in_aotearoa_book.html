@@ -25,7 +25,7 @@
 <meta property='og:image' content='https://www.nzcer.org.nz/system/files/styles/full_node_image/private/Decolonising_frontCover%20small.jpg' />
   
   <!-- CSSSTART -->
-	<link rel="stylesheet" href="emanote-compiled-2bcd761f6e3b92e1b85d26f394740b67.css" />
+	<link rel="stylesheet" href="emanote-compiled-d1db46dd599456cf7bfc08eb5e21a599.css" />
   <!-- CSSEND -->
 
   <!-- Heist error element -->
@@ -62,7 +62,8 @@
   h4,
   h5,
   h6,
-  header {
+  header,
+  .header-font {
     font-family: 'Nunito-Bold', sans-serif;
   }
 </style>
@@ -75,13 +76,17 @@
 <!-- DoNotFormat -->
 
 
+
 <!-- DoNotFormat -->
 
-<body class='overflow-y-scroll bg-gray-400'>
+<body class='bg-gray-400 overflow-y-scroll'>
   
     <div class='container mx-auto max-w-prose'>
       <div class='mt-2 md:mt-4'>
-        <nav id='uptree' class='flipped tree' style='transform-origin: 50%;'>
+        <!-- DoNotFormat -->
+<!-- DoNotFormat -->
+
+<nav id='uptree' class='flipped tree' style='transform-origin: 50%;'>
   <ul class='root'>
     <li>
       
@@ -89,7 +94,7 @@
           
             <li>
 
-  <div class='forest-link text-gray-900'>
+  <div class='text-gray-900 forest-link'>
     <a href='politics/matauranga_maori'>
       Mātauranga Māori
     </a>
@@ -100,7 +105,7 @@
       
         <li>
 
-  <div class='forest-link text-gray-900'>
+  <div class='text-gray-900 forest-link'>
     <a href='politics'>
       Politics
     </a>
@@ -111,7 +116,7 @@
       
         <li>
 
-  <div class='forest-link text-gray-900'>
+  <div class='text-gray-900 forest-link'>
     <a href=''>
       Welcome
     </a>
@@ -130,7 +135,7 @@
           
             <li>
 
-  <div class='forest-link text-gray-900'>
+  <div class='text-gray-900 forest-link'>
     <a href='zettelkasten'>
       Zettelkasten
     </a>
@@ -171,9 +176,12 @@
   
     </blockquote>
   
+  <!-- What goes in this file will appear below the note body-->
 </article>
-              
-  <div class='p-4 mt-8 bg-gray-100 rounded'>
+              <div class='flex flex-col lg:flex-row lg:space-x-2'>
+                
+                
+  <div class='flex-1 p-4 mt-8 bg-gray-100 rounded'>
     <header class='mb-2 text-xl font-semibold text-gray-500'>Links to this page</header>
     <ul class='space-y-1'>
       
@@ -181,22 +189,27 @@
           <a class='text-blue-600 font-bold hover:bg-blue-50' href='politics/matauranga_maori'>
             Mātauranga Māori
           </a>
-          <div class='mb-4 overflow-auto text-sm text-gray-500'>
-            <!-- TODO: How to style the backlinks list item element? Or render each separately?
-              Also, group contexts from same source.
-            -->
-            <div>I also may at some point read: <a href='zettelkasten/decolonisation_in_aotearoa_book' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkBranch'>Decolonisation in Aotearoa: Education, research and practice (book)</a>.</div>
-          </div>
+          
+            <div class='mb-4 overflow-auto text-sm text-gray-500'>
+  
+    <div class='pl-2 mt-2 border-l-2 border-blue-200 hover:border-blue-500'>
+      <div>I also may at some point read: <a href='zettelkasten/decolonisation_in_aotearoa_book' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkBranch'>Decolonisation in Aotearoa: Education, research and practice (book)</a>.</div>
+    </div>
+  
+</div>
+          
         </li>
       
     </ul>
   </div>
 
+              </div>
               
   <section class='flex flex-wrap items-end justify-center my-4 space-x-2 space-y-2 font-mono text-sm'>
     
   </section>
 
+              <!-- What goes in this file will at the very end of the main div -->
             </main>
           </div>
         </div>
@@ -213,7 +226,7 @@
     
       
         <span class='font-mono text-sm tracking-tighter' title='And rendered with /templates/layouts/note'>
-          0.1.47.2
+          0.3.8.0
         </span>
       
     

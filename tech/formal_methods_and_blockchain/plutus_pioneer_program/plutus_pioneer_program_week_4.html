@@ -21,7 +21,7 @@
 <script async src='https://hypothes.is/embed.js'></script>
   
   <!-- CSSSTART -->
-	<link rel="stylesheet" href="emanote-compiled-2bcd761f6e3b92e1b85d26f394740b67.css" />
+	<link rel="stylesheet" href="emanote-compiled-d1db46dd599456cf7bfc08eb5e21a599.css" />
   <!-- CSSEND -->
 
   <!-- Heist error element -->
@@ -58,7 +58,8 @@
   h4,
   h5,
   h6,
-  header {
+  header,
+  .header-font {
     font-family: 'Nunito-Bold', sans-serif;
   }
 </style>
@@ -69,17 +70,25 @@
 <!-- DoNotFormat -->
 
 
+
 <!-- DoNotFormat -->
 
-<body class='overflow-y-scroll bg-gray-400'>
+<body class='bg-gray-400 overflow-y-scroll'>
   
     <div class='container mx-auto'>
 
-      
-  <nav id='breadcrumbs' class='w-full text-gray-700 md:hidden'>
-    <div class='flex justify-left'>
-      <div class='w-full px-2 py-2 bg-gray-50'>
-        <ul class='flex flex-wrap text-lg'>
+      <nav id='breadcrumbs' class='w-full text-gray-700 md:hidden'>
+  <div class='flex justify-left'>
+    <div class='w-full px-2 py-2 bg-gray-50'>
+      <ul class='flex flex-wrap text-lg'>
+        <li class='inline-flex items-center'>
+          
+            
+              <img style='width: 1rem;' src='favicon.svg' />
+            
+          
+        </li>
+        
           
             <li class='inline-flex items-center'>
               <a class='px-1 font-bold' href=''>
@@ -117,13 +126,23 @@
               </svg>
             </li>
           
-        </ul>
-      </div>
+        
+      </ul>
     </div>
-  </nav>
+    <button class='inline px-2 py-1 text-white bg-blue-600 outline-none cursor-pointer focus:outline-none' title='Toggle sidebar' type='button' onclick="toggleHidden('sidebar')">
+      <svg xmlns='http://www.w3.org/2000/svg' class='w-4' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 6h16M4 12h16M4 18h16'></path>
+      </svg>
+    </button>
+    <script>
+      function toggleHidden(elemId) {
+        document.getElementById(elemId).classList.toggle("hidden");
+      }
+    </script>
+  </div>
+</nav>
 
-
-      <div class='flex flex-nowrap bg-gray-50 md:mt-8 md:shadow-2xl md:mb-8'>
+      <div id='container' class='flex flex-nowrap flex-col md:flex-row bg-gray-50 md:mt-8 md:shadow-2xl md:mb-8'>
         <!-- Sidebar column -->
         <nav id='sidebar' class='flex-shrink hidden leading-relaxed md:block md:sticky md:top-0 md:h-full md:w-48 xl:w-64'>
           <div class='px-2 py-2 text-gray-800'>
@@ -834,9 +853,17 @@
       Validation functions tend to be fairly simple (relatively) Haskell functions (esp. from needing <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>INLINABLE</code>). Off-chain code though, uses a lot of more advanced Haskell features.
     </p>
   <h3 id='monads' class='mt-6 mb-2 text-3xl font-bold text-gray-700'>Monads</h3>
-    <p class='mb-3'>
-      <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>main</code> gets executed by Haskell, evaluating the ‘recipe’ given by an <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>IO</code>. <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>main</code> should have the type <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>IO ()</code> (it seems…).
-    </p>
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          (<a href='https://youtu.be/g4lvA14I-Jg?t=5048' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>Relevant portion of video</a>) you don’t need <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>in</code> in <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>let</code> statements within <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>do</code> notation
+        </li>
+      
+        <li>
+          (<a href='https://youtu.be/g4lvA14I-Jg?t=5378' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>Relevant portion of video</a>) The Contract monad is used for <em>off-chain</em> code. <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>main</code> gets executed by Haskell, evaluating the ‘recipe’ given by an <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>IO</code>. <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>main</code> should have the type <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>IO ()</code> (it seems…).
+        </li>
+      
+    </ul>
   
     <p class='mb-3'>
       You can also execute IO in the <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>repl</code>. Putting an <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>IO ()</code> directly in the repl will cause it to be executed. E.g. <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>&gt; putStrLn "Hello World"</code>.
@@ -845,14 +872,55 @@
     <p class='mb-3'>
       Bind: <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>(&gt;&gt;=) :: Monad m =&gt; m a -&gt; (a -&gt; m b) -&gt; m b)</code>
     </p>
-  <div xmlhtmlRaw><!-- Up to here: https://youtu.be/g4lvA14I-Jg?t=1513 --></div>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          Contract w s e a (<a href='https://youtu.be/g4lvA14I-Jg?t=6799' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>Relevant portion of video</a>)
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          w = logging but for communication between contracts or to outside world
+        </li>
+      
+        <li>
+          s = specifies endpoints
+        </li>
+      
+        <li>
+          e = type of error messages
+        </li>
+      
+        <li>
+          a = result type of the Monad, just like <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>list a</code>
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          (<a href='https://youtu.be/g4lvA14I-Jg?t=6972' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>Relevant portion of video</a>) Use <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>@String ...</code> to force interpretation as a string when using OverloadedStrings Language Extension
+        </li>
+      
+        <li>
+          (<a href='https://youtu.be/g4lvA14I-Jg?t=7261' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>Relevant portion of video</a>) Contract with return type <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>Void</code> cannot throw any exceptions as <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>Void</code> has not possible values.
+        </li>
+      
+    </ul>
+  
+  <!-- What goes in this file will appear below the note body-->
 </article>
-            
+            <div class='flex flex-col lg:flex-row lg:space-x-2'>
+              
+              
+            </div>
             
   <section class='flex flex-wrap items-end justify-center my-4 space-x-2 space-y-2 font-mono text-sm'>
     
   </section>
 
+            <!-- What goes in this file will at the very end of the main div -->
           </main>
         </div>
       </div>
@@ -869,7 +937,7 @@
     
       
         <span class='font-mono text-sm tracking-tighter' title='And rendered with /templates/layouts/book'>
-          0.1.47.2
+          0.3.8.0
         </span>
       
     

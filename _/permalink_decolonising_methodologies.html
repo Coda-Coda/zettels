@@ -21,7 +21,7 @@
 <script async src='https://hypothes.is/embed.js'></script>
   
   <!-- CSSSTART -->
-	<link rel="stylesheet" href="emanote-compiled-2bcd761f6e3b92e1b85d26f394740b67.css" />
+	<link rel="stylesheet" href="emanote-compiled-d1db46dd599456cf7bfc08eb5e21a599.css" />
   <!-- CSSEND -->
 
   <!-- Heist error element -->
@@ -58,7 +58,8 @@
   h4,
   h5,
   h6,
-  header {
+  header,
+  .header-font {
     font-family: 'Nunito-Bold', sans-serif;
   }
 </style>
@@ -69,17 +70,25 @@
 <!-- DoNotFormat -->
 
 
+
 <!-- DoNotFormat -->
 
-<body class='overflow-y-scroll bg-gray-400'>
+<body class='bg-gray-400 overflow-y-scroll'>
   
     <div class='container mx-auto'>
 
-      
-  <nav id='breadcrumbs' class='w-full text-gray-700 md:hidden'>
-    <div class='flex justify-left'>
-      <div class='w-full px-2 py-2 bg-gray-50'>
-        <ul class='flex flex-wrap text-lg'>
+      <nav id='breadcrumbs' class='w-full text-gray-700 md:hidden'>
+  <div class='flex justify-left'>
+    <div class='w-full px-2 py-2 bg-gray-50'>
+      <ul class='flex flex-wrap text-lg'>
+        <li class='inline-flex items-center'>
+          
+            
+              <img style='width: 1rem;' src='favicon.svg' />
+            
+          
+        </li>
+        
           
             <li class='inline-flex items-center'>
               <a class='px-1 font-bold' href=''>
@@ -99,13 +108,23 @@
               </svg>
             </li>
           
-        </ul>
-      </div>
+        
+      </ul>
     </div>
-  </nav>
+    <button class='inline px-2 py-1 text-white bg-blue-600 outline-none cursor-pointer focus:outline-none' title='Toggle sidebar' type='button' onclick="toggleHidden('sidebar')">
+      <svg xmlns='http://www.w3.org/2000/svg' class='w-4' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 6h16M4 12h16M4 18h16'></path>
+      </svg>
+    </button>
+    <script>
+      function toggleHidden(elemId) {
+        document.getElementById(elemId).classList.toggle("hidden");
+      }
+    </script>
+  </div>
+</nav>
 
-
-      <div class='flex flex-nowrap bg-gray-50 md:mt-8 md:shadow-2xl md:mb-8'>
+      <div id='container' class='flex flex-nowrap flex-col md:flex-row bg-gray-50 md:mt-8 md:shadow-2xl md:mb-8'>
         <!-- Sidebar column -->
         <nav id='sidebar' class='flex-shrink hidden leading-relaxed md:block md:sticky md:top-0 md:h-full md:w-48 xl:w-64'>
           <div class='px-2 py-2 text-gray-800'>
@@ -1777,9 +1796,12 @@
     window.location.replace("/zettels/zettelkasten/decolonising_methodologies");
 </script>
 </div>
+  <!-- What goes in this file will appear below the note body-->
 </article>
-            
-  <div class='p-4 mt-8 bg-gray-100 rounded'>
+            <div class='flex flex-col lg:flex-row lg:space-x-2'>
+              
+              
+  <div class='flex-1 p-4 mt-8 bg-gray-100 rounded'>
     <header class='mb-2 text-xl font-semibold text-gray-500'>Links to this page</header>
     <ul class='space-y-1'>
       
@@ -1787,22 +1809,27 @@
           <a class='text-blue-600 font-bold hover:bg-blue-50' href='_/permalink_matauranga_maori'>
             Mātauranga Māori
           </a>
-          <div class='mb-4 overflow-auto text-sm text-gray-500'>
-            <!-- TODO: How to style the backlinks list item element? Or render each separately?
-              Also, group contexts from same source.
-            -->
-            <div><a href='_/permalink_decolonising_methodologies' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkBranch'>Decolonising Methodologies</a>, e.g.</div>
-          </div>
+          
+            <div class='mb-4 overflow-auto text-sm text-gray-500'>
+  
+    <div class='pl-2 mt-2 border-l-2 border-blue-200 hover:border-blue-500'>
+      <div><a href='_/permalink_decolonising_methodologies' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkBranch'>Decolonising Methodologies</a>, e.g.</div>
+    </div>
+  
+</div>
+          
         </li>
       
     </ul>
   </div>
 
+            </div>
             
   <section class='flex flex-wrap items-end justify-center my-4 space-x-2 space-y-2 font-mono text-sm'>
     
   </section>
 
+            <!-- What goes in this file will at the very end of the main div -->
           </main>
         </div>
       </div>
@@ -1819,7 +1846,7 @@
     
       
         <span class='font-mono text-sm tracking-tighter' title='And rendered with /templates/layouts/book'>
-          0.1.47.2
+          0.3.8.0
         </span>
       
     
