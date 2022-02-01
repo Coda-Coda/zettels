@@ -16,6 +16,7 @@ jobs:
           popd
       - name: Build emanote site 🔧
         run: |
+          mkdir -p /tmp
           mkdir -p output.docker 
           docker run -v $PWD:/data sridca/emanote emanote --layers "/data;/data/.deploy/github" gen /data/output.docker
           cp -r output.docker output  # Ditch docker created root-owned files
