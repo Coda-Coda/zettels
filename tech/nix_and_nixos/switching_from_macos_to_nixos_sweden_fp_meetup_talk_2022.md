@@ -50,7 +50,7 @@ A few days before the talk, I put out the question of what the highlights of dai
 Googling "NixOS memes" leads some interesting results 😄. Here's links to a couple that relate to this talk:
 - [Replit's use of Nix (with a meme)](https://blog.replit.com/nix-vs-docker)
   - ![It worked on my machine meme](https://img.devrant.com/devrant/rant/r_2341310_va2vS.jpg)
-- [NixOS on reddit (with a meme)](https://www.reddit.com/r/NixOS/comments/natg0t/the_new_normal/)
+- [NixOS subreddit (with a meme)](https://www.reddit.com/r/NixOS/comments/natg0t/the_new_normal/)
   - ![Rollbacks meme](https://i.redd.it/hjabdpplypy61.png)
 
 ### Finally
