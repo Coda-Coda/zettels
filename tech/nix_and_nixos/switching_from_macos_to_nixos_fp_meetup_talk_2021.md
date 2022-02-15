@@ -9,7 +9,7 @@ page:
     <meta name="dc.identifier" content="switching_from_macos_to_nixos_fp_meetup_talk_2021">
     <script async src="https://hypothes.is/embed.js"></script>
 ---
-# Switching from macOS to NixOS (Talk)
+# Switching from macOS to NixOS (Talk, Auckland Meetup)
 #nix
 
 _Presented at the [Functional Programming Auckland Meetup 27 April 2021](https://www.meetup.com/Functional-Programming-Auckland/events/277652719/)_

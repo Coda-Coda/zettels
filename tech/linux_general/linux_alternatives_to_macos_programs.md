@@ -24,4 +24,4 @@ page:
 | Music, TV, Books and Podcasts (iTunes)              | clementine🎁, iTunes on a [[windows_in_virtualbox_on_nixos]], spotify🎁                                          |
 | File sharing (iCloud/DropBox/Google Drive/OneDrive) | dropbox🎁 (it *might* be possible to get the others working but DropBox works the best out of the box on NixOS) |
 
-Sometimes webapps are the nicest option for some program, using Chromium/Google Chrome's "More Tools" > "Create Shortcut" > "Open as window" option is quite useful. gnome3.epiphany🎁 also has nice support for single page web apps.
+Sometimes webapps are the nicest option for some program, using Brave/Chromium/Google Chrome's "More Tools" > "Create Shortcut" > "Open as window" option is quite useful. gnome3.epiphany🎁 also has nice support for single page web apps.
