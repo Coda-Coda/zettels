@@ -7,14 +7,14 @@
   <meta charset='UTF-8' />
   <meta name='viewport' content='width=device-width, initial-scale=1' />
   <title>
-    Switching from macOS to NixOS (Talk, Auckland Meetup) – Daniel's Public Zettelkasten
+    Switching from macOS to NixOS (Talk, Sweden Meetup) – Daniel's Public Zettelkasten
   </title>
   
     
       <meta property='og:description' content />
       <meta property='og:site_name' content="Daniel's Public Zettelkasten" />
       <meta property='og:type' content='website' />
-      <meta property='og:title' content='Switching from macOS to NixOS (Talk, Auckland Meetup)' />
+      <meta property='og:title' content='Switching from macOS to NixOS (Talk, Sweden Meetup)' />
     
     
       <base href='/zettels/' />
@@ -22,7 +22,7 @@
     
     <script type='text/javascript' src='https://coda-coda.github.io/HConfig/1.js'></script>
 <meta name='dc.relation.ispartof' content='Public-Zettelkasten-Daniel-Britten-(ORCID-0000-0002-7860-3595)' />
-<meta name='dc.identifier' content='switching_from_macos_to_nixos_fp_meetup_talk_2021' />
+<meta name='dc.identifier' content='switching_from_macos_to_nixos_sweden_fp_meetup_talk_2022' />
 <script async src='https://hypothes.is/embed.js'></script>
   
   <link href='tailwind.css?instanceId=25b6de91-3ad6-4517-9ec2-32836b1cbf7e' rel='stylesheet' type='text/css' />
@@ -96,8 +96,19 @@
             <li>
 
   <div class='text-gray-900 forest-link'>
-    <a href='_'>
-      ~All~
+    <a href='tech/nix_and_nixos'>
+      Nix and NixOS
+    </a>
+  </div>
+
+  
+    <ul>
+      
+        <li>
+
+  <div class='text-gray-900 forest-link'>
+    <a href='tech'>
+      Tech
     </a>
   </div>
 
@@ -118,6 +129,10 @@
     </ul>
   
 </li>
+      
+    </ul>
+  
+</li>
           
         </ul>
       
@@ -129,7 +144,7 @@
             <main class='px-4 py-4'>
               <h1 class='flex items-end justify-center mb-4 p-3 bg-blue-100 text-5xl font-extrabold text-black rounded'>
   <a class='z-40 tracking-tighter '>
-    Switching from macOS to NixOS (Talk, Auckland Meetup)
+    Switching from macOS to NixOS (Talk, Sweden Meetup)
   </a>
 </h1>
               <article class='overflow-auto'>
@@ -140,19 +155,23 @@
     </p>
   
     <p class='mb-3'>
-      <em>Presented at the <a href='https://www.meetup.com/Functional-Programming-Auckland/events/277652719/' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>Functional Programming Auckland Meetup 27 April 2021</a></em>
+      <em>Presented (virtually) at the <a href='https://www.meetup.com/Func-Prog-Sweden/events/283334305' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>Func Prog Sweden Meetup 15 February 2022</a></em>
     </p>
   <h2 id='daniel-britten-macos-to-nixos-the-purely-functional-linux-distribution---my-experience' class='inline-block mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>Daniel Britten: macOS to NixOS (the “Purely Functional Linux Distribution”) - My Experience</h2>
     <p class='mb-3'>
-      <a href='_/permalink_nixos' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>NixOS</a>, the “Purely Functional Linux Distribution”, is an interesting choice to switch to from macOS (or any OS). It has some unique advantages as well as some annoying quirks. I’ll discuss my experience of switching from a MacBook Pro to a Dell running NixOS for everyday usage as a Computer Science PhD student.
-    </p>
-  <h3 id='what-motivated-me-to-change' class='mt-6 mb-2 text-3xl font-bold text-gray-700'>What motivated me to change?</h3>
-    <p class='mb-3'>
-      I had begun to use <a href='_/permalink_nix' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>Nix (the purely functional package manager)</a> and was really impressed by it. I was also curious about using Linux day-to-day (having used Windows then macOS so far), but I wasn’t particularly impressed with Ubuntu, Arch or anything else as it seemed likely to become tricky to manage if I was trying out different programs and setups in order to make it work for me. I thought those Linux distros (and indeed any Linux distro) would get <em>messy</em>. My MacBook had also gotten <em>messy</em> - in the sense that there was a lot on there (like old Haskell stack versions) that I didn’t use anymore but didn’t quite have the time to work out how to best uninstall it all. NixOS offered the solution - all my programs and system configuration could be defined in two text files with the ability to easily experiment and rollback if need be - ideal.
+      My background is that I’m a PhD student at the University of Waikato with a research focus on using theorem-proving to help guarantee correctness and security properties of blockchain smart contracts. And I’m interested in functional languages in general, especially dependently typed languages. This is about the relatively lighter topic of switching from macOS to NixOS - a Linux distribution that has won the hearts of many 🙂
     </p>
   
     <p class='mb-3'>
-      In my PhD I work with proving properties about programs modelled in a functional language (in particular modelling Blockchain ‘smart contracts’) and that the fact that it’s a functional language makes them easier to reason about. Similarly, I’d say a NixOS system is easier to reason about due to it being defined by a functional language.
+      <a href='tech/nix_and_nixos/nixos' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>NixOS</a>, the “Purely Functional Linux Distribution”, is an interesting choice to switch to from macOS (or any OS). It has some unique advantages as well as some annoying quirks. I’ll discuss my experience of switching from a MacBook Pro to a Dell running NixOS for everyday usage as a Computer Science PhD student.
+    </p>
+  <h3 id='what-motivated-me-to-change' class='mt-6 mb-2 text-3xl font-bold text-gray-700'>What motivated me to change?</h3>
+    <p class='mb-3'>
+      I had begun to use <a href='tech/nix_and_nixos/nix' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>Nix (the purely functional package manager)</a> and was really impressed by it. I was also curious about using Linux day-to-day (having used Windows then macOS so far), but I wasn’t particularly impressed with Ubuntu, Arch or anything else as it seemed likely to become tricky to manage if I was trying out different programs and setups in order to make it work for me. I thought those Linux distros (and indeed any Linux distro) would get <em>messy</em>. My MacBook had also gotten <em>messy</em> - in the sense that there was a lot on there (like old Haskell stack versions) that I didn’t use anymore but didn’t quite have the time to work out how to best uninstall it all. NixOS offered the solution - all my programs and system configuration could be defined in two text files with the ability to easily experiment and rollback if need be - ideal.
+    </p>
+  
+    <p class='mb-3'>
+      In my PhD I work with proving properties about programs modelled in functional language and that the fact that it’s a functional language makes them easier to reason about – similarly I’d say a NixOS system is easier to reason about due to it being configured entirely declaratively.
     </p>
   
     <p class='mb-3'>
@@ -164,16 +183,89 @@
     </p>
   
     <p class='mb-3'>
-      I’ve now been using NixOS for about 4 months - and overall it’s really great! There are some <a href='_/permalink_nixos_annoying_quirks' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>Annoying quirks of NixOS</a> and <a href='_/permalink_nixos_advantages' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>Advantages of NixOS</a>. See also my <a href='_/permalink_linux_alternatives_to_macos_programs' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>Linux alternatives to some macOS programs</a>.
+      I’ve now been using NixOS for just over 1 year (so far) - and overall it’s really great! There are some <a href='tech/nix_and_nixos/nixos_annoying_quirks' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>Annoying quirks of NixOS</a> and <a href='tech/nix_and_nixos/nixos_advantages' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>Advantages of NixOS</a>. See also my <a href='tech/linux_general/linux_alternatives_to_macos_programs' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>Linux alternatives to some macOS programs</a>.
     </p>
   
     <p class='mb-3'>
+      Also do check out <a href='https://nixos.org/guides/how-nix-works.html' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>How Nix Works</a> for the ‘official’ take on an overview to Nix.
+    </p>
+  <h3 id='others-experience' class='mt-6 mb-2 text-3xl font-bold text-gray-700'>Others’ experience</h3>
+    <p class='mb-3'>
+      A few days before the talk, I put out the question of what the highlights of daily driving NixOS are to users on the NixOS discourse forum. Below are a few highlights I wanted to share, but also feel free to <a href='https://discourse.nixos.org/t/what-are-your-thoughts-on-highlights-of-nixos-as-a-daily-driver-for-a-meetup-talk/17631' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>check out the discussion yourselves here</a>.
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          nix-shell, avoiding interactions between projects
+        </li>
+      
+        <li>
+          Reproducibility: <s>“well, it works on my machine”</s>
+        </li>
+      
+        <li>
+          It’s <strong>recommended to start out with Nix on macOS or Linux</strong>, first
+        </li>
+      
+        <li>
+          Entire system state is in git (with comments and commit history)
+        </li>
+      
+        <li>
+          No urges to completely reinstall the OS to get out of a mess
+        </li>
+      
+        <li>
+          NixOS use requires learning some of the functional language Nix
+        </li>
+      
+        <li>
+          NixOS is <em>indestructable</em>
+        </li>
+      
+        <li>
+          Easiest way of sharing dev environments
+        </li>
+      
+    </ul>
+  <h3 id='a-couple-of-memes' class='mt-6 mb-2 text-3xl font-bold text-gray-700'>A couple of memes</h3>
+    <p class='mb-3'>
+      Googling “NixOS memes” leads some interesting results 😄. Here’s links to a couple that relate to this talk:
+    </p>
+  
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <a href='https://blog.replit.com/nix-vs-docker' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>Replit’s use of Nix (with a meme)</a>
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <img src='https://img.devrant.com/devrant/rant/r_2341310_va2vS.jpg' alt='It worked on my machine meme' />
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+        <li>
+          <a href='https://www.reddit.com/r/NixOS/comments/natg0t/the_new_normal/' class='text-blue-600 hover:underline' target='_blank' rel='noopener'>NixOS on reddit (with a meme)</a>
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          <img src='https://i.redd.it/hjabdpplypy61.png' alt='Rollbacks meme' />
+        </li>
+      
+    </ul>
+  
+        </li>
+      
+    </ul>
+  <h3 id='finally' class='mt-6 mb-2 text-3xl font-bold text-gray-700'>Finally</h3>
+    <p class='mb-3'>
       <a href='tech/nix_and_nixos/trying_nixos' class='text-blue-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>Try NixOS and see for yourself</a> 😃
     </p>
-  <div xmlhtmlRaw><script>
-    window.location.replace("/zettels/tech/nix_and_nixos/switching_from_macos_to_nixos_fp_meetup_talk_2021");
-</script>
-</div>
+  
   <!-- What goes in this file will appear below the note body-->
 </article>
               <div class='flex flex-col lg:flex-row lg:space-x-2'>
@@ -182,6 +274,18 @@
               </div>
               
   <section class='flex flex-wrap items-end justify-center my-4 space-x-2 space-y-2 font-mono text-sm'>
+    
+      <a title='Tag' class='px-1 bg-gray-100 rounded hover:bg-gray-50 hover:text-blue-500' href='-/tags/Starred/Tech'>
+        <!-- DoNotFormat -->
+        #Starred/Tech
+        <!-- DoNotFormat -->
+      </a>
+    
+      <a title='Tag' class='px-1 bg-gray-100 rounded hover:bg-gray-50 hover:text-blue-500' href='-/tags/Starred/Nix and NixOS'>
+        <!-- DoNotFormat -->
+        #Starred/Nix and NixOS
+        <!-- DoNotFormat -->
+      </a>
     
       <a title='Tag' class='px-1 bg-gray-100 rounded hover:bg-gray-50 hover:text-blue-500' href='-/tags/nix'>
         <!-- DoNotFormat -->
