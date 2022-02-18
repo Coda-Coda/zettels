@@ -12,7 +12,7 @@ page:
 # Switching from macOS to NixOS (Talk, Sweden Meetup)
 #nix
 
-_Presented (virtually) at the [Func Prog Sweden Meetup 15 February 2022](https://www.meetup.com/Func-Prog-Sweden/events/283334305)_
+_Presented (virtually) at the Func Prog Sweden Meetup 15 February 2022 - [watch the talk here](https://www.youtube.com/watch?v=SzFn7UwVws0)_.
 
 ## Daniel Britten: macOS to NixOS (the "Purely Functional Linux Distribution") - My Experience
 
